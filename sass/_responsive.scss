@@ -1,0 +1,65 @@
+@media screen and (max-width: 940px) {  
+	#main-header .main-header-inner, #main-content .main-content-inner, #main-footer .main-footer-inner{
+		width: 760px
+	}
+}
+
+@media screen and (max-width: 760px) {  
+	#main-header .main-header-inner, #main-content .main-content-inner, #main-footer .main-footer-inner{
+		width: 480px
+	}
+	
+	#main-content #login-register{
+		float:none;
+		margin-left:0;
+		margin-bottom:40px;
+		width:100%;
+	}
+	
+	#main-content #information{
+		margin-right:0;
+	}
+}
+
+@media screen and (max-width: 480px) {  
+	#main-header, #main-footer{
+		padding: 20px
+	}
+	
+	#main-content{
+		padding: 30px 20px
+	}
+	
+	#main-header .main-header-inner, #main-content .main-content-inner, #main-footer .main-footer-inner{
+		width: 100%;
+	}
+	
+	#main-header .main-header-inner{
+		text-align: center
+	}
+	
+	#main-content #login-register{
+		float:none;
+		margin-left:0;
+		margin-bottom:40px;
+		width:100%;
+	}
+	
+	#main-content #information{
+		margin-right:0;
+	}
+}
+
+/*@media screen and (min-width: 1200px) {  
+	#main-header .main-header-inner, #main-content .main-content-inner, #main-footer .main-footer-inner{
+		width: 1200px
+	}
+
+	#main-content #login-register{
+		width:400px;
+	}
+
+	#main-content #information{
+		margin-right:440px;
+	}
+}*/

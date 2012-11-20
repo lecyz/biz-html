@@ -1,0 +1,248 @@
+@import "reset";
+@import "mixin";
+@import "responsive";
+
+body {
+	padding: 0;
+	margin: 0;
+	font: 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 22px;
+	height: 100%;
+	background: #f2f2f2;
+	color: #333;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-ms-text-size-adjust: 100%
+}
+
+a {
+	color:#206AB6;
+	text-decoration:none;
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	-ms-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+	-webkit-tap-highlight-color: #333
+}
+
+a:visited {
+	color:#206AB6
+}
+
+a:hover {
+	color:#333
+}
+
+a:hover, a:active, a:focus{
+	outline:none
+}
+
+#main-header{
+	background: #fff;
+	padding: 20px 0;
+	border-bottom: 1px solid #d2d3d4;
+	overflow:hidden;
+}
+
+#main-header .main-header-inner, #main-content .main-content-inner, #main-footer .main-footer-inner{
+	width: 940px;
+	margin: 0 auto
+}
+
+#main-header .main-header-inner .help{
+	float: right
+}
+
+#main-header .main-header-inner .help a{
+	@include button-blue;
+	@include transition; 
+}
+
+#main-content{
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #d2d3d4;
+	padding: 40px 0
+}
+
+#main-content .main-content-inner{
+	text-align: justify
+}
+
+#main-content #information{
+	margin-right: 340px
+}
+
+#main-content #login-register{
+	float: right;
+	width: 300px;
+	margin-left: -300px
+}
+
+#main-footer{
+	border-top: 1px solid #fff
+}
+
+#main-footer .main-footer-inner{
+	padding: 20px 0
+}
+
+#login-register #login{
+	margin-bottom: 40px
+}
+
+#login-register #login .title, #login-register #register .title{
+	@include title-center;
+}
+
+#login-register #login .login-username{
+	margin-bottom: 15px;
+	@include input-shadow;
+}
+
+#login-register #login .login-password{
+	display: inline-block;
+	margin-bottom: 13px;
+	@include input-shadow;
+}
+
+#login-register #login .ic-on{
+	float: left;
+	@include icon-bg;
+	cursor: pointer
+}
+
+#login-register #login .icon-mail{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(http://biztree.mn/assets/glyphicons-halflings-dfe254c1f38954318cdb116f7be5fd03.png) -72px 0 no-repeat;
+}
+
+#login-register #login .icon-pass{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(http://biztree.mn/assets/glyphicons-halflings-dfe254c1f38954318cdb116f7be5fd03.png) -287px -24px no-repeat;
+}
+
+#login-register #login .login-username #email, #login-register #login .login-password #password{
+	display: inline-block;
+	@include input-box;
+	width: 249px;
+	margin: 0;
+	margin-left: -1px
+}
+
+#login-register #login .login-password #password{
+	width:167px
+}
+
+#login-register #login .login-button{
+	float: right;
+	@include button-blue;
+	@include transition;
+}
+
+#login-register #login .remember-pass{
+	margin-bottom: 20px
+}
+
+#login-register #login .remember-pass .rem-text{
+	margin-left: 5px;
+	cursor: pointer
+}
+
+#login-register #login .remember-pass input[type="checkbox"]{
+	-webkit-appearance: none;
+	-webkit-user-select: none;
+	background: white;
+	border: 1px solid #d2d3d4;
+	color: #333;
+	font: inherit;
+	margin: 0 1px 0 0;
+	bottom: 2px;
+	height: 14px;
+	position: relative;
+	vertical-align: middle;
+	width: 14px;
+	cursor: pointer
+}
+
+#login-register #login .remember-pass input[type="checkbox"]:hover{
+	border-color: #b2b3b4
+}
+
+#login-register #login .remember-pass input[type="checkbox"]:active{
+	border-color: #888
+}
+
+#login-register #login .remember-pass input[type="checkbox"]:checked::before {
+	-webkit-user-select: none;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAcklEQVQY02NgwA/YoJgoEA/Es4DYgJBCJSBeD8SboRinBiYg7kZS2IosyQ/Eakh8LySFq4FYHFlxGRBvBOJYqMRqJMU+yApNkSRAeC0Sux3dfSCTetE0wKyXxOWhMKhTYIr9CAUXyJMzgLgBagBBgDPGAI2LGdNt0T1AAAAAAElFTkSuQmCC);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+html[dir='rtl'] #login-register #login .remember-pass input[type="checkbox"]:checked::before {
+  -webkit-transform: scaleX(-1);
+}
+
+#login-register #login .forgot-pass{
+	float: right
+}
+
+#login-register #login .forgot-pass .icon-pass2{
+	display: inline-block;
+	margin-right: 5px;
+	width: 13px;
+	height: 13px;
+	background: url(http://biztree.mn/assets/glyphicons-halflings-dfe254c1f38954318cdb116f7be5fd03.png) -96px -96px no-repeat
+}
+
+#login-register #login .forgot-pass .forgot-pass-link{
+	color: #333
+}
+
+#login-register #login .forgot-pass .forgot-pass-link:hover{
+	color: #206ab6
+}
+
+#login-register #login .login-social{
+	overflow: hidden
+}
+
+#login-register #login .login-social .social-button a{
+	width: 60px;
+	height: 32px;
+	float: left;
+	display: block;
+	background: #ccc;
+	margin-right: 20px;
+	@include social-icon;
+}
+
+#login-register #login .login-social .facebook a{
+	background-color: #3b5998
+}
+
+#login-register #login .login-social .twitter a{
+	background-position: 0 -33px;
+	background-color: #00aced
+}
+
+#login-register #login .login-social .googleplus a{
+	background-position: 0  -66px;
+	background-color: #d53c30
+}
+
+#login-register #login .login-social .linkedin a{
+	background-position: 0  -99px;
+	background-color: #0073b2;
+	margin-right: 0;
+}
+
