@@ -1,14 +1,15 @@
 $visitor: monster;
 
-body {
-  @if $visitor == monster {
-    color: red;
-    content: "Fuck off!";
-  } 
+body {<br/>
+&nbsp;&nbsp;@if $visitor == monster {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;content: "Fuck off!";<br/>
+} <br/>
 
-  @else if $visitor == human {
-    content: "Hello World!"
-    &:hover{
-      -wekbit-transform: scale(1.1);
-    }
+&nbsp;&nbsp;@else if $visitor == human {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;content: "Hello World!"<br/>
+&nbsp;&nbsp;&:hover{<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;-wekbit-transform: scale(1.1);<br/>
+&nbsp;&nbsp;}<br/>
 }
+<br/><br/>
+<h1>Fuck off!</h1>
