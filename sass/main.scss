@@ -1,6 +1,5 @@
 @import "reset";
 @import "mixin";
-@import "responsive";
 
 body {
 	padding: 0;
@@ -51,22 +50,20 @@ a:hover, a:active, a:focus{
 }
 
 #main-header .main-header-inner .help{
-	float: right
+	float: right;
+	margin-top: 5px
 }
 
 #main-header .main-header-inner .help a{
-	@include button-blue;
-	@include transition; 
+	@include button-gray;
+	@include transition;
+	padding: 7px 12px;
 }
 
 #main-content{
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #d2d3d4;
 	padding: 40px 0
-}
-
-#main-content .main-content-inner{
-	text-align: justify
 }
 
 #main-content #information{
@@ -84,7 +81,16 @@ a:hover, a:active, a:focus{
 }
 
 #main-footer .main-footer-inner{
-	padding: 20px 0
+	padding: 20px 0;
+	margin-bottom: 10px
+}
+
+#main-header #logo{
+	background: url(http://biztree.mn/assets/images/logo.png) no-repeat;
+	width: 150px;
+	height: 36px;
+	display: inline-block;
+	text-indent: -999em
 }
 
 #login-register #login{
@@ -95,47 +101,56 @@ a:hover, a:active, a:focus{
 	@include title-center;
 }
 
-#login-register #login .login-username{
-	margin-bottom: 15px;
+#login-register .light{
 	@include input-shadow;
+}
+
+#login-register #login .login-username{
+	margin-bottom: 15px
 }
 
 #login-register #login .login-password{
 	display: inline-block;
-	margin-bottom: 13px;
-	@include input-shadow;
+	margin-bottom: 13px
 }
 
-#login-register #login .ic-on{
+#login-register .ic-on{
 	float: left;
 	@include icon-bg;
+	@include transition;
 	cursor: pointer
 }
 
-#login-register #login .icon-mail{
+#login-register .icon-mail{
 	display: inline-block;
 	width: 14px;
 	height: 14px;
-	background: url(http://biztree.mn/assets/glyphicons-halflings-dfe254c1f38954318cdb116f7be5fd03.png) -72px 0 no-repeat;
+	background: url(http://biztree.mn/assets/glyphicons-halflings-dfe254c1f38954318cdb116f7be5fd03.png) -72px 0 no-repeat
 }
 
-#login-register #login .icon-pass{
+#login-register .icon-pass{
 	display: inline-block;
 	width: 14px;
 	height: 14px;
-	background: url(http://biztree.mn/assets/glyphicons-halflings-dfe254c1f38954318cdb116f7be5fd03.png) -287px -24px no-repeat;
+	background: url(http://biztree.mn/assets/glyphicons-halflings-dfe254c1f38954318cdb116f7be5fd03.png) -287px -24px no-repeat
 }
 
-#login-register #login .login-username #email, #login-register #login .login-password #password{
+#login-register .icon-name{
 	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(http://biztree.mn/assets/glyphicons-halflings-dfe254c1f38954318cdb116f7be5fd03.png) -168px 0 no-repeat
+}
+
+#login-register .biztree-input{
 	@include input-box;
 	width: 249px;
-	margin: 0;
+	display: inline-block;
 	margin-left: -1px
 }
 
 #login-register #login .login-password #password{
-	width:167px
+	width:159px
 }
 
 #login-register #login .login-button{
@@ -149,35 +164,16 @@ a:hover, a:active, a:focus{
 }
 
 #login-register #login .remember-pass .rem-text{
-	margin-left: 5px;
+	margin-left: 3px;
 	cursor: pointer
 }
 
 #login-register #login .remember-pass input[type="checkbox"]{
-	-webkit-appearance: none;
-	-webkit-user-select: none;
-	background: white;
-	border: 1px solid #d2d3d4;
-	color: #333;
-	font: inherit;
-	margin: 0 1px 0 0;
-	bottom: 2px;
-	height: 14px;
-	position: relative;
-	vertical-align: middle;
-	width: 14px;
-	cursor: pointer
+	@include checkbox;
+	@include transition;
 }
 
-#login-register #login .remember-pass input[type="checkbox"]:hover{
-	border-color: #b2b3b4
-}
-
-#login-register #login .remember-pass input[type="checkbox"]:active{
-	border-color: #888
-}
-
-#login-register #login .remember-pass input[type="checkbox"]:checked::before {
+#login-register input[type="checkbox"]:checked::before {
 	-webkit-user-select: none;
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAcklEQVQY02NgwA/YoJgoEA/Es4DYgJBCJSBeD8SboRinBiYg7kZS2IosyQ/Eakh8LySFq4FYHFlxGRBvBOJYqMRqJMU+yApNkSRAeC0Sux3dfSCTetE0wKyXxOWhMKhTYIr9CAUXyJMzgLgBagBBgDPGAI2LGdNt0T1AAAAAAElFTkSuQmCC);
 	background-size: 100% 100%;
@@ -188,24 +184,21 @@ a:hover, a:active, a:focus{
 	width: 100%;
 }
 
-html[dir='rtl'] #login-register #login .remember-pass input[type="checkbox"]:checked::before {
-  -webkit-transform: scaleX(-1);
-}
-
 #login-register #login .forgot-pass{
 	float: right
 }
 
 #login-register #login .forgot-pass .icon-pass2{
 	display: inline-block;
-	margin-right: 5px;
+	margin-right: 3px;
 	width: 13px;
 	height: 13px;
 	background: url(http://biztree.mn/assets/glyphicons-halflings-dfe254c1f38954318cdb116f7be5fd03.png) -96px -96px no-repeat
 }
 
 #login-register #login .forgot-pass .forgot-pass-link{
-	color: #333
+	color: #333;
+	@include transition;
 }
 
 #login-register #login .forgot-pass .forgot-pass-link:hover{
@@ -224,6 +217,9 @@ html[dir='rtl'] #login-register #login .remember-pass input[type="checkbox"]:che
 	background: #ccc;
 	margin-right: 20px;
 	@include social-icon;
+	@include transition;
+	@include social-style;
+	@include border-radius;
 }
 
 #login-register #login .login-social .facebook a{
@@ -243,6 +239,61 @@ html[dir='rtl'] #login-register #login .remember-pass input[type="checkbox"]:che
 #login-register #login .login-social .linkedin a{
 	background-position: 0  -99px;
 	background-color: #0073b2;
-	margin-right: 0;
+	margin-right: 0
 }
 
+#login-register .register-name1, #login-register .register-name2, #login-register .register-mail, #login-register .register-password{
+	margin-bottom: 15px
+}
+
+#login-register #register .terms{
+	margin: 16px 0
+}
+
+#login-register #register .terms #terms{
+	@include checkbox;
+	@include transition;
+}
+
+#login-register #register .terms span{
+	margin-left: 3px;
+	cursor: pointer
+}
+
+#login-register #register .register-biztree{
+	text-align: center
+}
+
+#login-register #register .register-biztree .register-button{
+	@include button-blue;
+	@include transition;
+	padding: 6px 15px;
+}
+
+#main-footer .biztree-links{
+	text-align: center
+}
+
+#main-footer .biztree-links .sep{
+
+}
+
+#main-footer .biztree-footer-logo{
+	width: 43px;
+	height: 36px;
+	display: block;
+	float: left;
+	background: #206ab6;
+	margin-right: 20px;
+	margin-top: 5px
+}
+
+#main-footer .copyright{
+	display: block
+}
+
+#main-footer .developed{
+	float: right
+}
+
+@import "responsive";
