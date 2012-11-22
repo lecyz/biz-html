@@ -86,7 +86,7 @@ a:hover, a:active, a:focus{
 }
 
 #main-header #logo{
-	background: url(http://biztree.mn/assets/images/logo.png) no-repeat;
+	background: url(../images/logo.png) no-repeat;
 	width: 150px;
 	height: 36px;
 	display: inline-block;
@@ -214,12 +214,10 @@ a:hover, a:active, a:focus{
 	height: 32px;
 	float: left;
 	display: block;
-	background: #ccc;
 	margin-right: 20px;
 	@include social-icon;
 	@include transition;
 	@include social-style;
-	@include border-radius;
 }
 
 #login-register #login .login-social .facebook a{
@@ -275,7 +273,11 @@ a:hover, a:active, a:focus{
 }
 
 #main-footer .biztree-links .sep{
-
+	width: 2px;
+	height: 13px;
+	display: inline-block;
+	background: url(../images/link-sep.png) no-repeat;
+	margin: 0 10px;
 }
 
 #main-footer .biztree-footer-logo{
@@ -283,9 +285,9 @@ a:hover, a:active, a:focus{
 	height: 36px;
 	display: block;
 	float: left;
-	background: #206ab6;
+	background: url(../images/footer-logo.png) no-repeat;
 	margin-right: 20px;
-	margin-top: 5px
+	margin-top: 3px
 }
 
 #main-footer .copyright{
@@ -294,6 +296,38 @@ a:hover, a:active, a:focus{
 
 #main-footer .developed{
 	float: right
+}
+
+#information h3.title{
+	@include title-center;
+}
+
+#information ul{
+	background: white;
+	border: 1px solid #d2d3d4;
+	padding: 15px;
+	padding-bottom: 30px;
+	/*box-shadow: inset 0 0 0 1px white, inset 0 0 20px rgba(0, 0, 0, 0.1);*/
+}
+
+#information ul li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+#information ul li:last-child{
+	margin-bottom: 0
+}
+
+#information .register-company{
+	text-align: center;
+	margin-top: -10px;
+}
+
+#information .register-company a{
+	@include button-blue;
+	@include transition;
+	padding: 6px 15px;
 }
 
 @import "responsive";

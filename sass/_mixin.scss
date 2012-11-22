@@ -10,11 +10,11 @@
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4188d0', endColorstr='#206ab6',GradientType=0 );
 	cursor: pointer;
 	color: white;
-	font-weight: bold;
-	text-transform: uppercase;
 	padding: 6px 8px;
 	line-height: 18px;
 	margin: 0;
+	text-transform: uppercase;
+	font-weight: bold;
 	font-size: 12px;
 	text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
@@ -55,11 +55,11 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f1f1f1',GradientType=0 );
 	cursor: pointer;
 	color: #333;
-	font-weight: bold;
-	text-transform: uppercase;
 	padding: 6px 8px;
 	line-height: 18px;
 	margin: 0;
+	text-transform: uppercase;
+	font-weight: bold;
 	font-size: 12px;
 	box-shadow: inset 0 1px 0 rgba(255,255,255,.75);
 	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.75);
@@ -150,10 +150,18 @@
 	& span{
 		background: #f2f2f2;
 		padding: 0 10px;
+		text-shadow: 0 1px 0 rgba(255,255,255,.9);
 	}
 }
 
 @mixin social-style{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-ms-border-radius: 3px;
+
 	&:hover{
 		box-shadow: inset 0 0 15px rgba(0,0,0,.6);
 		-webkit-box-shadow: inset 0 0 15px rgba(0,0,0,.6);
@@ -166,17 +174,6 @@
 		-webkit-box-shadow: inset 0 0 25px rgba(0,0,0,.7);
 		-moz-box-shadow: inset 0 0 25px rgba(0,0,0,.7);
 		-o-box-shadow: inset 0 0 25px rgba(0,0,0,.7);
-	}
-}
-
-@mixin border-radius{
-	&:hover{
-		border-radius: 3px;
-		-webkit-border-radius: 3px;
-		-moz-border-radius: 3px;
-		-o-border-radius: 3px;
-		-khtml-border-radius: 3px;
-		-ms-border-radius: 3px;
 	}
 }
 
