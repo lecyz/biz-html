@@ -17,11 +17,11 @@ body {
 a {
 	color:#206AB6;
 	text-decoration:none;
-	-webkit-transition: all .1s ease-in-out;
-	-moz-transition: all .1s ease-in-out;
-	-o-transition: all .1s ease-in-out;
-	-ms-transition: all .1s ease-in-out;
-	transition: all .1s ease-in-out;
+	-webkit-transition: color .1s ease-in-out;
+	-moz-transition: color .1s ease-in-out;
+	-o-transition: color .1s ease-in-out;
+	-ms-transition: color .1s ease-in-out;
+	transition: color .1s ease-in-out;
 	-webkit-tap-highlight-color: #333
 }
 
@@ -265,7 +265,13 @@ a:hover, a:active, a:focus{
 #login-register #register .register-biztree .register-button{
 	@include button-blue;
 	@include transition;
-	padding: 6px 15px;
+	margin-bottom: 20px;
+}
+
+#login-register #register .register-biztree .fix{
+	background: #fff;
+	display: block;
+	padding: 10px 0;
 }
 
 #main-footer .biztree-links{
