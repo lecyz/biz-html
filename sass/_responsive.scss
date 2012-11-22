@@ -15,7 +15,42 @@
 		margin-bottom:40px;
 		width:100%;
 	}
+
+	#login .login-username, #login .login-password, #register .register-name1, #register .register-name2, #register .register-password, #register .register-password2{
+		display: inline-block;
+	}
 	
+	#main-content #login .login-password, #register .register-name2 , #register .register-password2{
+		margin-left: 15px;
+	}
+
+	#main-content #login .biztree-input, #register #name_1, #register #name_2, #register #password_1, #register #password_2{
+		@include input-480-width;
+	}
+
+	#register .register-mail .biztree-input{
+		width: 429px;
+	}
+
+	#login-register #login .login-button{
+		padding: 6px 14px;
+	}
+
+	#login-register #login .remember-pass{
+		margin-top: 5px;
+	}
+
+	#login-register #login .forgot-pass{
+		display: inline-block;
+		margin-top: 0;
+		margin-left: 20px;
+	}
+
+	#login-register .login-social .social-button a{
+		width: 105px !important;
+		margin-top: 10px;
+	}
+
 	#main-content #information{
 		margin-right:0;
 	}
@@ -37,7 +72,7 @@
 	#main-header .main-header-inner{
 		text-align: center
 	}
-	
+
 	#main-content #login-register{
 		float:none;
 		margin-left:0;
