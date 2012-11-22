@@ -105,13 +105,8 @@ a:hover, a:active, a:focus{
 	@include input-shadow;
 }
 
-#login-register #login .login-username{
+#login-register #login .login-username, #login-register #login .login-password{
 	margin-bottom: 15px
-}
-
-#login-register #login .login-password{
-	display: inline-block;
-	margin-bottom: 13px
 }
 
 #login-register .ic-on{
@@ -149,18 +144,10 @@ a:hover, a:active, a:focus{
 	margin-left: -1px
 }
 
-#login-register #login .login-password #password{
-	width:159px
-}
-
 #login-register #login .login-button{
 	float: right;
 	@include button-blue;
 	@include transition;
-}
-
-#login-register #login .remember-pass{
-	margin-bottom: 20px
 }
 
 #login-register #login .remember-pass .rem-text{
@@ -184,16 +171,16 @@ a:hover, a:active, a:focus{
 	width: 100%;
 }
 
-#login-register #login .forgot-pass{
-	float: right
-}
-
 #login-register #login .forgot-pass .icon-pass2{
 	display: inline-block;
-	margin-right: 3px;
+	margin-right: 5px;
 	width: 13px;
 	height: 13px;
 	background: url(http://biztree.mn/assets/glyphicons-halflings-dfe254c1f38954318cdb116f7be5fd03.png) -96px -96px no-repeat
+}
+
+#login-register #login .forgot-pass{
+	margin-top: 5px;
 }
 
 #login-register #login .forgot-pass .forgot-pass-link{
@@ -206,7 +193,8 @@ a:hover, a:active, a:focus{
 }
 
 #login-register #login .login-social{
-	overflow: hidden
+	overflow: hidden;
+	margin-top: 20px;
 }
 
 #login-register #login .login-social .social-button a{
@@ -262,16 +250,22 @@ a:hover, a:active, a:focus{
 	text-align: center
 }
 
-#login-register #register .register-biztree .register-button{
+#login-register #register .register-button{
 	@include button-blue;
 	@include transition;
-	margin-bottom: 20px;
+	width: 300px
 }
 
-#login-register #register .register-biztree .fix{
-	background: #fff;
+#login-register .register-company .button{
+	@include button-blue;
+	@include transition;
 	display: block;
-	padding: 10px 0;
+}
+
+#login-register .register-biztree .sub-title{
+	@include title-center;
+	margin: 20px 0;
+	font-size: 13px;
 }
 
 #main-footer .biztree-links{
@@ -319,21 +313,6 @@ a:hover, a:active, a:focus{
 #information ul li{
 	list-style: none;
 	margin-bottom: 10px;
-}
-
-#information ul li:last-child{
-	margin-bottom: 0
-}
-
-#information .register-company{
-	text-align: center;
-	margin-top: -10px;
-}
-
-#information .register-company a{
-	@include button-blue;
-	@include transition;
-	padding: 6px 15px;
 }
 
 @import "responsive";
