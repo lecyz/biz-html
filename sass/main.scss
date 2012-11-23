@@ -57,7 +57,7 @@ a:hover, a:active, a:focus{
 #main-header .main-header-inner .help a{
 	@include button-blue;
 	@include transition;
-	padding: 7px 40px;
+	padding: 7px 20px;
 }
 
 #main-content{
@@ -67,13 +67,13 @@ a:hover, a:active, a:focus{
 }
 
 #main-content #information{
-	margin-right: 340px
+	margin-right: 390px
 }
 
 #main-content #login-register{
 	float: right;
-	width: 300px;
-	margin-left: -300px
+	width: 350px;
+	margin-left: -350px
 }
 
 #main-footer{
@@ -145,9 +145,11 @@ a:hover, a:active, a:focus{
 }
 
 #login-register #login .login-button{
-	float: right;
+	/*float: right;*/
 	@include button-blue;
 	@include transition;
+	margin-top: 15px;
+	padding: 6px 20px;
 }
 
 #login-register #login .remember-pass .rem-text{
@@ -180,7 +182,7 @@ a:hover, a:active, a:focus{
 }
 
 #login-register #login .forgot-pass{
-	margin-top: 5px;
+	float: right
 }
 
 #login-register #login .forgot-pass .forgot-pass-link{
@@ -194,15 +196,15 @@ a:hover, a:active, a:focus{
 
 #login-register #login .login-social{
 	overflow: hidden;
-	margin-top: 20px;
+	margin-bottom: 30px;
 }
 
 #login-register #login .login-social .social-button a{
-	width: 60px;
+	width: 67px;
 	height: 32px;
 	float: left;
 	display: block;
-	margin-right: 20px;
+	margin-right: 10px;
 	@include social-icon;
 	@include transition;
 	@include social-style;
@@ -246,9 +248,9 @@ a:hover, a:active, a:focus{
 	cursor: pointer
 }
 
-#login-register #register .register-biztree{
+/*#login-register #register .register-biztree{
 	text-align: center
-}
+}*/
 
 #login-register #register .register-button{
 	@include button-blue;
