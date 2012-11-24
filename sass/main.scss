@@ -139,7 +139,7 @@ a:hover, a:active, a:focus{
 
 #login-register .biztree-input{
 	@include input-box;
-	width: 249px;
+	width: 299px;
 	display: inline-block;
 	margin-left: -1px
 }
@@ -204,7 +204,7 @@ a:hover, a:active, a:focus{
 	height: 32px;
 	float: left;
 	display: block;
-	margin-right: 10px;
+	margin-right: 27px;
 	@include social-icon;
 	@include transition;
 	@include social-style;
