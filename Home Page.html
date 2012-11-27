@@ -8,16 +8,17 @@
 <head>
 	<title>Home Page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link href="css/main.css" media="all" rel="stylesheet" type="text/css" />
+
+    <link href="css/main.css" media="all" rel="stylesheet" type="text/css" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
-<body style="font-size:12px">
+<body>
 <div id="main-wrapper">
 	<header id="main-header" class="clearfix">
 		<div class="main-header-inner">
 			<a href="#" id="logo" title="Biztree.mn" alt="Biztree.mn">Biztree.mn</a>
-			<div class="help" style="background:#f2f2f2;padding:10px;width:330px;text-align:center">
-				<a href="#">Компани бүртгүүлэх</a>
+			<div class="help">
+				<a href="#">Тусламж</a>
 			</div>
 		</div>
 	</header>
@@ -42,14 +43,14 @@
 						<input id="password" class="biztree-input" name="password" placeholder="Нууц үг" type="password">
 					</div>
 					<div class="remember-pass">    
+	                    <div class="forgot-pass">
+							<i class="icon-pass2"></i>
+							<a href="#" class="forgot-pass-link">Нууц үг сэргээх</a>
+						</div>
 	                    <label class="checkbox" for="remember_me">
 	                      <input id="remember_me" name="remember_me" type="checkbox" value="1"> 
 	                      <span class="rem-text">Сануулах</span>
 						</label>
-						<div class="forgot-pass">
-							<i class="icon-pass2"></i>
-							<a href="#" class="forgot-pass-link">Нууц үг сэргээх</a>
-						</div>
                		</div>
                		<input class="login-button" name="commit" type="submit" value="Нэвтрэх">
 				</hgroup>
@@ -116,8 +117,6 @@
 				<a href="#">Үйлчилгээний нөxцөл</a>
 				<span class="sep"></span>
 				<a href="#contactus" data-toggle="modal" role="button">Холбоо барих</a>
-				<span class="sep"></span>
-				<a href="#">Тусламж</a>
 			</hgroup>
 			<hgroup class="biztree-copyright">
 				<a href="#" class="biztree-footer-logo"></a>

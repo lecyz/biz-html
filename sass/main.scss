@@ -30,7 +30,8 @@ a:visited {
 }
 
 a:hover {
-	color:#333
+	color:#333;
+	text-decoration: none
 }
 
 a:hover, a:active, a:focus{
@@ -55,7 +56,7 @@ a:hover, a:active, a:focus{
 }
 
 #main-header .main-header-inner .help a{
-	@include button-blue;
+	@include button-gray;
 	@include transition;
 	padding: 7px 20px;
 }
@@ -138,7 +139,7 @@ a:hover, a:active, a:focus{
 }
 
 #login-register .biztree-input{
-	@include input-box;
+	@include biz-input-box;
 	width: 299px;
 	display: inline-block;
 	margin-left: -1px
@@ -153,7 +154,7 @@ a:hover, a:active, a:focus{
 }
 
 #login-register #login .remember-pass .rem-text{
-	margin-left: 3px;
+	margin-left: 8px;
 	cursor: pointer
 }
 
