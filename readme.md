@@ -7,8 +7,6 @@ body {<br/>
 
 &nbsp;&nbsp;@else if $visitor == human {<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;content: "Hello World!"<br/>
-&nbsp;&nbsp;&:hover{<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;-wekbit-transform: scale(1.1);<br/>
 &nbsp;&nbsp;}<br/>
 }
 <br/><br/>
