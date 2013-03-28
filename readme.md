@@ -2,7 +2,7 @@ $visitor: monster;
 
 body {<br/>
 &nbsp;&nbsp;@if $visitor == monster {<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;content: "Fuck off!";<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;content: "Beck teneg!";<br/>
 } <br/>
 &nbsp;&nbsp;@else if $visitor == human {<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;content: "Hello World!"<br/>
